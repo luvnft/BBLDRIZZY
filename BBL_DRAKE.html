@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play/Pause Song</title>
+</head>
+<body>
+
+<audio id="myAudio" src="/Users/angelmarquezchavarria/Downloads/Metro Boomin - BBL Drizzy (Lyrics) Drake Diss.mp3"></audio>
+
+<!-- Button to play/pause the song -->
+<button onclick="togglePlayPause()">
+    <img src="/Users/angelmarquezchavarria/Downloads/red-button-sign-stock-vector-130152563.webp" alt="Play/Pause">
+</button>
+
+<script>
+    var audio = document.getElementById("myAudio");
+
+    function togglePlayPause() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+</body>
+</html>
